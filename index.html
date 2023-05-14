@@ -5,6 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }  
+  </style>
 </head>
 <body>
   
@@ -2771,7 +2784,9 @@
   </div>
 
 
-  <input type="button" value="Corregir" onclick="corregir()" />
+  <div style="padding-top: 25px; padding-bottom: 30px; text-align: center;">
+    <input type="button" class="button" value="Corregir" onclick="corregir()" />
+  </div>
 
 
    <script>
@@ -2782,6 +2797,7 @@
         var els_corregido = document.getElementById('corregido').querySelectorAll('input[type="checkbox"], input[type="radio"]');
         var diferencias = 0;
         for(var i = 0; i < els_rellenar.length; i++) {
+          els_rellenar[i].parentElement.style.border = '';
           if (els_rellenar[i].checked != els_corregido[i].checked) {
             els_rellenar[i].parentElement.style.border = 'thick solid #FF0000';
             diferencias++;
@@ -2792,7 +2808,7 @@
           alert('Hay ' + diferencias + ' diferencias');
         }
         else {
-          alert('Todo perfecto :)');
+          alert('Lo tenemos igual :)');
         }
 
       }
