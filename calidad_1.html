@@ -1,0 +1,583 @@
+<form name="saveAttemptForm" id="bb-take-assessment" method="post" action="/webapps/assessment/do/take/saveAttempt" enctype="multipart/form-data" onsubmit="return false;" style="margin: 0px;" data-gtm-form-interact-id="0">  <input type="hidden" name="blackboard.platform.security.NonceUtil.nonce.ajax" id="blackboard.platform.security.NonceUtil.nonce.ajax" value="42668f4c-8887-4ce6-a817-6beaa8e57ba6">
+
+
+ 
+  <input type="hidden" name="data-submitted" id="data-submitted" value="true">
+
+
+ 
+  <input type="hidden" name="course_assessment_id" id="course_assessment_id" value="_70696_1">
+
+
+ 
+  <input type="hidden" name="course_id" id="course_id" value="_30700_1">
+
+
+ 
+  <input type="hidden" name="content_id" id="content_id" value="_2312311_1">
+
+
+ 
+  <input type="hidden" name="step" id="step" value="">
+
+
+ 
+  <input type="hidden" name="original_user_id" id="original_user_id" value="_227333_1">
+
+
+ 
+  <input type="hidden" name="save_and_submit" id="save_and_submit" value="">
+
+
+ 
+  <input type="hidden" name="timer_completion" id="timer_completion" value="">
+
+
+ 
+  <input type="hidden" name="fileUploadType" id="fileUploadType" value="">
+
+
+ 
+
+<a href="/webapps/assessment/accessibility.jsp" target="_blank" class="hideoff">Sugerencias de Assistive Technology [se abre en una nueva ventana]</a>
+<div id="instructionBlock" class="infoListWrapper">
+  <h3 id="anonymous_element_7"><a id="instructionsExpander_3576777_1_20956426_1" class="open" href="#" title="Ocultar" aria-expanded="true"><img alt="" class="hideoff" src="/images/spacer.gif"> Información del examen</a></h3>
+  <div id="instructionsContainer_3576777_1_20956426_1" style="zoom: 1;">
+    <h3 class="hideoff" id="anonymous_element_8">Instrucciones</h3>
+    <table class="key-valueTable" summary="">
+        
+<tbody><tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Descripción</span></th>
+  <td>
+
+
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Instrucciones</span></th>
+  <td>
+
+
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Intentos múltiples</span></th>
+  <td>
+
+Este examen permite 3 intentos. Intento número 3.
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Forzar terminación</span></th>
+  <td>
+
+Este examen se puede guardar y reanudar posteriormente.
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label"></span></th>
+  <td>
+
+Las respuestas se guardan automáticamente.
+  </td>
+</tr>
+</tbody></table>
+    </div><!-- end div#instructionsContainer -->
+</div><!-- end div#infoListWrapper -->
+
+   <!-- portlet -->
+   <!-- The position:fixed style is required here so that the status bar may be re-positioned by setting style.top no matter which theme is chosen.-->
+<div class="assessmentPortlet" id="topbar" style="visibility: visible; left: 10px; top: 0px; width: 1369px;">
+
+<!-- begin portletBlock -->
+  <div class="liveArea timer">
+
+    <div class="questionStatus">
+			
+  <input type="hidden" name="toggle_state" id="toggle_state" value="qShow">
+
+
+ 
+<h3 class="questionStatusLabel" id="anonymous_element_9">
+       <button type="button" class="abutton" onclick="toggleElement('statusBlock'); return false;">
+	    <img src="/images/ci/ng/more_options_dark.gif" alt="Expandir" title="Expandir" id="statusBlockimg">
+			 Estado de finalización de la pregunta:</button></h3>
+
+       
+<div class="qShow" id="statusBlock" style="display: none;">
+<div class="completionContainer">
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_1');">
+            <span class="qComplete" id="span_1">1<img id="img_1" src="/images/ci/icons/file_li.gif" width="10" height="10" align="middle" border="0" alt="Pregunta completada">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_2');">
+            <span class="qComplete" id="span_2">2<img id="img_2" src="/images/ci/icons/file_li.gif" width="10" height="10" align="middle" border="0" alt="Pregunta completada">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_3');">
+            <span class="qComplete" id="span_3">3<img id="img_3" src="/images/ci/icons/file_li.gif" width="10" height="10" align="middle" border="0" alt="Pregunta completada">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_4');">
+            <span class="qComplete" id="span_4">4<img id="img_4" src="/images/ci/icons/file_li.gif" width="10" height="10" align="middle" border="0" alt="Pregunta completada">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_5');">
+            <span class="qComplete" id="span_5">5<img id="img_5" src="/images/ci/icons/file_li.gif" width="10" height="10" align="middle" border="0" alt="Pregunta completada">
+            </span>
+       </button>
+</div>
+</div>
+
+
+
+
+</div> <!-- /.questionStatus -->
+
+  </div> <!-- /.timer -->
+</div>
+
+  <!-- assessment_js.jspf -->
+
+<div id="dataCollectionContainer" style="position: relative; top: 52px;">
+<div class="submitStepTop">
+</div>
+
+     <div id="_20956428_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle1" class="steptitle">
+            Pregunta 1
+      </h3>     <div id="stepcontent1" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_1">&nbsp;</a><fieldset><legend class="legend-visible">La evaluación y selección de proveedores debe realizarse en función:</legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"1",name:"mc-ans-_20956428_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956428_1_0" type="radio" value="0" name="mc-ans-_20956428_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          1.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956428_1_0">del precio del material solicitado</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956428_1_1" type="radio" checked value="1" name="mc-ans-_20956428_1" class="multiple-choice-question" data-gtm-form-interact-field-id="0">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          2.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956428_1_1">de su capacidad para suministrar productos</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956428_1_2" type="radio" value="2" name="mc-ans-_20956428_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          3.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956428_1_2">si tiene implantado o no un Sistema de Calidad</label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4 answerSavedButton" type="button" id="saveButton_1" onclick="javascript:saveOneItem('_20956428_1','1', true, true)" aria-label="Guardar respuesta para pregunta 1" value="Guardado"></p></span>
+  </div><div id="_20956429_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle2" class="steptitle">
+            Pregunta 2
+      </h3>     <div id="stepcontent2" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_2">&nbsp;</a><fieldset><legend class="legend-visible">De los siguientes principios de gestión de calidad según la serie de normas 9000.¿Cuál de ellos no es cierto?</legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"2",name:"mc-ans-_20956429_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956429_1_0" type="radio" checked value="0" name="mc-ans-_20956429_1" class="multiple-choice-question" data-gtm-form-interact-field-id="1">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          1.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956429_1_0">Formación </label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956429_1_1" type="radio" value="1" name="mc-ans-_20956429_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          2.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956429_1_1">Liderazgo</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956429_1_2" type="radio" value="2" name="mc-ans-_20956429_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          3.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956429_1_2">Enfoque basado en hechos para la toma de decisiones</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956429_1_3" type="radio" value="3" name="mc-ans-_20956429_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          4.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956429_1_3">Enfoque al cliente</label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4 answerSavedButton" type="button" id="saveButton_2" onclick="javascript:saveOneItem('_20956429_1','2', true, true)" aria-label="Guardar respuesta para pregunta 2" value="Guardado"></p></span>
+  </div><div id="_20956430_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle3" class="steptitle">
+            Pregunta 3
+      </h3>     <div id="stepcontent3" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_3">&nbsp;</a><fieldset><legend class="legend-visible">La familia de normas ISO 9000 está formada por:</legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"3",name:"mc-ans-_20956430_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956430_1_0" type="radio" value="0" name="mc-ans-_20956430_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          1.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956430_1_0">9000, 9001 9004 y 14001  </label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956430_1_1" type="radio" checked value="1" name="mc-ans-_20956430_1" class="multiple-choice-question" data-gtm-form-interact-field-id="2">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          2.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956430_1_1">9000,9001 y 9004</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956430_1_2" type="radio" value="2" name="mc-ans-_20956430_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          3.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956430_1_2">9000, 9001, 9002, 9003 y 9004</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956430_1_3" type="radio" value="3" name="mc-ans-_20956430_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          4.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956430_1_3">9000, 9001, 9004 y 19011</label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4 answerSavedButton" type="button" id="saveButton_3" onclick="javascript:saveOneItem('_20956430_1','3', true, true)" aria-label="Guardar respuesta para pregunta 3" value="Guardado"></p></span>
+  </div><div id="_20956431_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle4" class="steptitle">
+            Pregunta 4
+      </h3>     <div id="stepcontent4" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_4">&nbsp;</a><fieldset><legend class="legend-visible">La documentación del Sistema de Gestión de la Calidad debe incluir:</legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"4",name:"mc-ans-_20956431_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956431_1_0" type="radio" value="0" name="mc-ans-_20956431_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          1.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956431_1_0">Un manual de Calidad</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956431_1_1" type="radio" value="1" name="mc-ans-_20956431_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          2.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956431_1_1">Declaración de la política y los objetivos de Calidad</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956431_1_2" type="radio" value="2" name="mc-ans-_20956431_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          3.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956431_1_2">Los registros requeridos por la norma</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956431_1_3" type="radio" checked value="3" name="mc-ans-_20956431_1" class="multiple-choice-question" data-gtm-form-interact-field-id="3">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          4.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956431_1_3">Todas las respuestas son correctas</label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4 answerSavedButton" type="button" id="saveButton_4" onclick="javascript:saveOneItem('_20956431_1','4', true, true)" aria-label="Guardar respuesta para pregunta 4" value="Guardado"></p></span>
+  </div><div id="_20956432_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle5" class="steptitle">
+            Pregunta 5
+      </h3>     <div id="stepcontent5" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_5">&nbsp;</a><fieldset><legend class="legend-visible">La organización para conseguir los objetivos:</legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"5",name:"mc-ans-_20956432_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956432_1_0" type="radio" value="0" name="mc-ans-_20956432_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          1.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956432_1_0">Debe determinar y proporcionar los recursos necesarios</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956432_1_1" type="radio" value="1" name="mc-ans-_20956432_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          2.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956432_1_1">Debe determinar la competencia necesaria del personal </label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956432_1_2" type="radio" value="2" name="mc-ans-_20956432_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          3.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956432_1_2">Debe determinar y gestionar el ambiente de trabajo</label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956432_1_3" type="radio" checked value="3" name="mc-ans-_20956432_1" class="multiple-choice-question" data-gtm-form-interact-field-id="4">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          4.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956432_1_3">Todas las anteriores son correctas</label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4 answerSavedButton" type="button" id="saveButton_5" onclick="javascript:saveOneItem('_20956432_1','5', true, true)" aria-label="Guardar respuesta para pregunta 5" value="Guardado"></p></span>
+  </div>
+ 
+ 		 <div class="submitStepBottom" style="margin-bottom: auto;">
+<h3 id="steptitle6" class="steptitle submittitle">
+ &nbsp;Guardar y enviar
+</h3>
+<p class="taskbuttonhelp" style="display: none;">Haga clic en Guardar y enviar para guardar y enviar. Haga clic en Guardar todas las respuestas para guardar todas las respuestas.</p>
+
+<div class="taskbuttondiv_wrapper">
+<p class="taskbuttondiv" id="bottom_submitButtonRow">
+			<input id="bottom_saveAllAnswersButton" class="button-2" type="button" name="bottom_saveAllAnswersButton" role="button" value="Guardar todas las respuestas" onclick="return saveAllQuestions(true);">
+		<input class="submit button-1" name="bottom_Guardar y enviar" type="submit" role="button" value="Guardar y enviar" onclick="javascript:return assessment.doConfirmSubmit(submitAssessment);">
+
+</p>
+</div>
+
+</div>
+	
+</div>
+  <input type="hidden" name="current_question" id="current_question" value="5">
+
+
+ 
+  <input type="hidden" name="current_attempt_item_id" id="current_attempt_item_id" value="_20956426_1">
+
+
+ 
+  <input type="hidden" name="current_attempt_item_id_backup" id="current_attempt_item_id_backup" value="_20956426_1">
+
+
+ 
+  <input type="hidden" name="method" id="method" value="">
+
+
+ 
+  <input type="hidden" name="saveonequestion" id="saveonequestion" value="true">
+
+
+ 
+
+</form>

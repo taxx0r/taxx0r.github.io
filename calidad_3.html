@@ -1,0 +1,597 @@
+<form name="saveAttemptForm" id="bb-take-assessment" method="post" action="/webapps/assessment/do/take/saveAttempt" enctype="multipart/form-data" onsubmit="return false;" style="margin: 0px;">  <input type="hidden" name="blackboard.platform.security.NonceUtil.nonce.ajax" id="blackboard.platform.security.NonceUtil.nonce.ajax" value="42668f4c-8887-4ce6-a817-6beaa8e57ba6">
+
+
+ 
+  <input type="hidden" name="data-submitted" id="data-submitted" value="true">
+
+
+ 
+  <input type="hidden" name="course_assessment_id" id="course_assessment_id" value="_70692_1">
+
+
+ 
+  <input type="hidden" name="course_id" id="course_id" value="_30700_1">
+
+
+ 
+  <input type="hidden" name="content_id" id="content_id" value="_2312312_1">
+
+
+ 
+  <input type="hidden" name="step" id="step" value="">
+
+
+ 
+  <input type="hidden" name="original_user_id" id="original_user_id" value="_227333_1">
+
+
+ 
+  <input type="hidden" name="save_and_submit" id="save_and_submit" value="">
+
+
+ 
+  <input type="hidden" name="timer_completion" id="timer_completion" value="">
+
+
+ 
+  <input type="hidden" name="fileUploadType" id="fileUploadType" value="">
+
+
+ 
+
+<a href="/webapps/assessment/accessibility.jsp" target="_blank" class="hideoff">Sugerencias de Assistive Technology [se abre en una nueva ventana]</a>
+<div id="instructionBlock" class="infoListWrapper">
+  <h3 id="anonymous_element_3"><a id="instructionsExpander_3576775_1_20956433_1" class="open" href="#" title="Ocultar" aria-expanded="true"><img alt="" class="hideoff" src="/images/spacer.gif"> Información del examen</a></h3>
+  <div id="instructionsContainer_3576775_1_20956433_1" style="zoom: 1;">
+    <h3 class="hideoff" id="anonymous_element_4">Instrucciones</h3>
+    <table class="key-valueTable" summary="">
+        
+<tbody><tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Descripción</span></th>
+  <td>
+
+
+<div class="vtbegenerated">Autoevaluación Módulo III.</div>
+
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Instrucciones</span></th>
+  <td>
+
+
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Intentos múltiples</span></th>
+  <td>
+
+Este examen permite 3 intentos. Intento número 2.
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Forzar terminación</span></th>
+  <td>
+
+Este examen se puede guardar y reanudar posteriormente.
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label"></span></th>
+  <td>
+
+Las respuestas se guardan automáticamente.
+  </td>
+</tr>
+</tbody></table>
+    </div><!-- end div#instructionsContainer -->
+</div><!-- end div#infoListWrapper -->
+
+   <!-- portlet -->
+   <!-- The position:fixed style is required here so that the status bar may be re-positioned by setting style.top no matter which theme is chosen.-->
+<div class="assessmentPortlet" id="topbar" style="visibility: visible; left: 5px; top: 421px; width: 833px;">
+
+<!-- begin portletBlock -->
+  <div class="liveArea timer">
+
+    <div class="questionStatus">
+			
+  <input type="hidden" name="toggle_state" id="toggle_state" value="qShow">
+
+
+ 
+<h3 class="questionStatusLabel" id="anonymous_element_5">
+       <button type="button" class="abutton" onclick="toggleElement('statusBlock'); return false;">
+	    <img src="/images/ci/ng/more_options_dark.gif" alt="Expandir" title="Expandir" id="statusBlockimg">
+			 Estado de finalización de la pregunta:</button></h3>
+
+       
+<div class="qShow" id="statusBlock" style="display: none;">
+<div class="completionContainer">
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_1');">
+            <span class="qIncomplete" id="span_1">1<img id="img_1" src="/images/spacer.gif" width="1" height="1" align="middle" border="0" alt="Pregunta incompleta">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_2');">
+            <span class="qIncomplete" id="span_2">2<img id="img_2" src="/images/spacer.gif" width="1" height="1" align="middle" border="0" alt="Pregunta incompleta">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_3');">
+            <span class="qIncomplete" id="span_3">3<img id="img_3" src="/images/spacer.gif" width="1" height="1" align="middle" border="0" alt="Pregunta incompleta">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_4');">
+            <span class="qIncomplete" id="span_4">4<img id="img_4" src="/images/spacer.gif" width="1" height="1" align="middle" border="0" alt="Pregunta incompleta">
+            </span>
+       </button>
+<button type="button" class="abutton" onclick="return assessment.inlineJumpTo('question_5');">
+            <span class="qIncomplete" id="span_5">5<img id="img_5" src="/images/spacer.gif" width="1" height="1" align="middle" border="0" alt="Pregunta incompleta">
+            </span>
+       </button>
+</div>
+</div>
+
+
+
+
+</div> <!-- /.questionStatus -->
+
+  </div> <!-- /.timer -->
+</div>
+
+  <!-- assessment_js.jspf -->
+
+<div id="dataCollectionContainer" style="position: relative; top: 58px;">
+<div class="submitStepTop">
+</div>
+
+     <div id="_20956435_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle1" class="steptitle">
+            Pregunta 1
+      </h3>     <div id="stepcontent1" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_1">&nbsp;</a><fieldset><legend class="legend-visible"><div class="vtbegenerated inlineVtbegenerated"><p>¿En qué parte de la norma ISO 9001:2015 se trata de los recursos,&nbsp;la cualificación&nbsp;y competencia del personal, la concienciación&nbsp;y la comunicación y la documentación?</p></div></legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"1",name:"mc-ans-_20956435_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956435_1_0" type="radio" value="0" name="mc-ans-_20956435_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          a.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956435_1_0"><p>Apartado 5&nbsp;de liderazgo</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956435_1_1" type="radio" value="1" name="mc-ans-_20956435_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          b.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956435_1_1"><p>Apartado 8 de operaciones</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956435_1_2" type="radio" checked value="2" name="mc-ans-_20956435_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          c.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956435_1_2"><p>Apartado 7 de soporte</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956435_1_3" type="radio" value="3" name="mc-ans-_20956435_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          d.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956435_1_3"><p>Apartado 6 de planificación</p></label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4" type="button" id="saveButton_1" onclick="javascript:saveOneItem('_20956435_1','1', true, true)" aria-label="Guardar respuesta para pregunta 1" value="Guardar respuesta"></p></span>
+  </div><div id="_20956436_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle2" class="steptitle">
+            Pregunta 2
+      </h3>     <div id="stepcontent2" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_2">&nbsp;</a><fieldset><legend class="legend-visible"><div class="vtbegenerated inlineVtbegenerated"><p>¿Cuáles de los siguientes estándares están destinados a evaluar la calidad de los productos de software?</p></div></legend>
+<script type="text/javascript">
+    formCheckList.addElement(new Check_Answer({ref_label:"2",name:"ma-ans-_20956436_1"}));
+  </script>
+  
+  <table class="multiple-answer-table">
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956436_1_0" type="checkbox" checked value="0" name="ma-ans-_20956436_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          a.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956436_1_0"><p>ISO&nbsp;25000</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956436_1_1" type="checkbox" checked value="1" name="ma-ans-_20956436_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          b.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956436_1_1"><p>ISO 9126</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956436_1_2" type="checkbox" value="2" name="ma-ans-_20956436_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          c.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956436_1_2"><p>CMMi</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956436_1_3" type="checkbox" checked value="3" name="ma-ans-_20956436_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          d.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956436_1_3"><p>ISO 15504</p></label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4" type="button" id="saveButton_2" onclick="javascript:saveOneItem('_20956436_1','2', true, true)" aria-label="Guardar respuesta para pregunta 2" value="Guardar respuesta"></p></span>
+  </div><div id="_20956437_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle3" class="steptitle">
+            Pregunta 3
+      </h3>     <div id="stepcontent3" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_3">&nbsp;</a><fieldset><legend class="legend-visible"><div class="vtbegenerated inlineVtbegenerated"><p>¿Cuáles de las siguientes son afirmaciones correctas?</p></div></legend>
+<script type="text/javascript">
+    formCheckList.addElement(new Check_Answer({ref_label:"3",name:"ma-ans-_20956437_1"}));
+  </script>
+  
+  <table class="multiple-answer-table">
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956437_1_0" type="checkbox" checked value="0" name="ma-ans-_20956437_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          a.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956437_1_0"><p>IEEE 730&nbsp;sugiere una estructura de plan de aseguramiento de calidad para proyectos de software</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956437_1_1" type="checkbox" checked value="1" name="ma-ans-_20956437_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          b.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956437_1_1"><p>&nbsp;La lógica REDER de EFQM genera un proceso lineal de REDucción&nbsp;de resultados para optimizar la Evaluación y&nbsp;Revisión.</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956437_1_2" type="checkbox" checked value="2" name="ma-ans-_20956437_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          c.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956437_1_2"><p>ISO 15504&nbsp;aporta un modelo de procesos de referencia a la vez que permite una evaluación de nivel global de una organización como CMMi</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="ma-ans-_20956437_1_3" type="checkbox" checked value="3" name="ma-ans-_20956437_1">
+    
+</td>
+        <td class="multiple-answer-numbering multiple-option-row">
+          d.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="ma-ans-_20956437_1_3"><p>CMMi&nbsp;incluye 22 áreas de proceso evaluables&nbsp;en su versión de desarrollo de software</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4" type="button" id="saveButton_3" onclick="javascript:saveOneItem('_20956437_1','3', true, true)" aria-label="Guardar respuesta para pregunta 3" value="Guardar respuesta"></p></span>
+  </div><div id="_20956438_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle4" class="steptitle">
+            Pregunta 4
+      </h3>     <div id="stepcontent4" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_4">&nbsp;</a><fieldset><legend class="legend-visible"><div class="vtbegenerated inlineVtbegenerated"><p>¿Cuál de las siguientes afirmaciones sobre los estándares ISO en TIC NO es correcta?</p></div></legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"4",name:"mc-ans-_20956438_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956438_1_0" type="radio" value="0" name="mc-ans-_20956438_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          a.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956438_1_0"><p>En CMMI hay prácticas específicas para las actividades de un proceso y prácticas generales con guías para aplicar a cada proceso</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956438_1_1" type="radio" value="1" name="mc-ans-_20956438_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          b.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956438_1_1"><p>ISO 20000&nbsp;incluye un ciclo de mejora continua de la gestión de servicios de TI</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956438_1_2" type="radio" checked value="2" name="mc-ans-_20956438_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          c.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956438_1_2"><p>ISO 9126&nbsp;solo considera las características&nbsp;no funcionales de la calidad del software</p></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956438_1_3" type="radio" value="3" name="mc-ans-_20956438_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          d.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956438_1_3"><p>La norma ISO 9001 se orienta a las empresas que deben hacerse cargo del diseño, producción, instalación y servicio post-venta del producto</p></label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4" type="button" id="saveButton_4" onclick="javascript:saveOneItem('_20956438_1','4', true, true)" aria-label="Guardar respuesta para pregunta 4" value="Guardar respuesta"></p></span>
+  </div><div id="_20956439_1" class="takeQuestionDiv " style="position:relative;">
+       <h3 id="steptitle5" class="steptitle">
+            Pregunta 5
+      </h3>     <div id="stepcontent5" class="  stepcontent  ">
+   <ol role="presentation">
+     
+   
+     
+
+<li>
+
+
+<div class="field">
+
+  
+ <a class="hidden" href="#" onclick="return false;" id="question_5">&nbsp;</a><fieldset><legend class="legend-visible"><div class="vtbegenerated inlineVtbegenerated"><p>Como parte de las acciones del aseguramiento de calidad en proyectos de software, ¿cuál de las siguientes afirmaciones sería correcta?</p>  <div id="rtcc-nm-installed"></div></div></legend>
+<script type="text/javascript">
+            formCheckList.addElement(new Check_Answer({ref_label:"5",name:"mc-ans-_20956439_1"}));
+  </script>
+  <table class="multiple-choice-table">
+    
+    <tbody><tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956439_1_0" type="radio" value="0" name="mc-ans-_20956439_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          a.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956439_1_0"><p>Solo se pueden definir métricas de software basadas en criterios de cobertura de pruebas</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956439_1_1" type="radio" value="1" name="mc-ans-_20956439_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          b.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956439_1_1"><p>Evitar&nbsp;definir un plan de aseguramiento de calidad del software para dejar flexibilidad a los desarrolladores de software</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956439_1_2" type="radio" checked value="2" name="mc-ans-_20956439_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          c.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956439_1_2"><p>Definir criterios de compleción de pruebas que deberían comprobarse mediante evidencias (por ejemplo, las proporcionadas por herramientas de control)</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      <tr>
+        <td class="multiple-option-row">
+            <input id="mc-ans-_20956439_1_3" type="radio" value="3" name="mc-ans-_20956439_1" class="multiple-choice-question">
+    
+</td>
+        <td class="multiple-choice-numbering multiple-option-row">
+          d.</td>
+        <td>
+          
+<div class="vtbegenerated inlineVtbegenerated"><label for="mc-ans-_20956439_1_3"><p>No hay relación alguna entre el aseguramiento de calidad en el proyecto y otros estándares de calidad ya mencionados.</p>  <div id="rtcc-nm-installed"></div></label></div>
+</td>
+      </tr>
+      </tbody></table>
+
+
+</fieldset>
+    <span class="fieldErrorText"></span>
+  
+</div>
+</li> 
+   </ol>
+  </div>
+  
+  <span class="stepTitleRight liveArea"><p class="taskbuttondiv">10 puntos &nbsp; <input class="button-4" type="button" id="saveButton_5" onclick="javascript:saveOneItem('_20956439_1','5', true, true)" aria-label="Guardar respuesta para pregunta 5" value="Guardar respuesta"></p></span>
+  </div>
+ 
+ 		 <div id="bottomSubmitPlaceHolder" style="height: 138px;"></div><div class="submitStepBottom submitStepFixed" style="width: 813px;">
+<h3 id="steptitle6" class="steptitle submittitle">
+ &nbsp;Guardar y enviar
+</h3>
+<p class="taskbuttonhelp" style="display: none;">Haga clic en Guardar y enviar para guardar y enviar. Haga clic en Guardar todas las respuestas para guardar todas las respuestas.</p>
+
+<div class="taskbuttondiv_wrapper">
+<p class="taskbuttondiv" id="bottom_submitButtonRow">
+			<input id="bottom_saveAllAnswersButton" class="button-2" type="button" name="bottom_saveAllAnswersButton" role="button" value="Guardar todas las respuestas" onclick="return saveAllQuestions(true);">
+		<input class="submit button-1" name="bottom_Guardar y enviar" type="submit" role="button" value="Guardar y enviar" onclick="javascript:return assessment.doConfirmSubmit(submitAssessment);">
+
+</p>
+</div>
+
+</div>
+	
+</div>
+  <input type="hidden" name="current_question" id="current_question" value="1">
+
+
+ 
+  <input type="hidden" name="current_attempt_item_id" id="current_attempt_item_id" value="_20956433_1">
+
+
+ 
+  <input type="hidden" name="current_attempt_item_id_backup" id="current_attempt_item_id_backup" value="_20956433_1">
+
+
+ 
+  <input type="hidden" name="method" id="method" value="">
+
+
+ 
+  <input type="hidden" name="saveonequestion" id="saveonequestion" value="">
+
+
+ 
+
+</form>
